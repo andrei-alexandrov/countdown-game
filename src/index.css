@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Gumela";
+  src: url(../fonts/Gumela.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gumela", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscalse;
+  background: linear-gradient(#334d50, #999876);
+  color: #e1eeeb;
+  min-height: 100vh;
+}
+
+#content {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: radial-gradient(#0b201d, #021619);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-family: 'Gumela', monospace;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c1e2dd;
+  text-shadow: 0 0 4px rgba(35, 34, 34, 0.4);
+  font-size: 3.1rem;
+  margin: 0;
+}
+
+h1 em {
+  font-style: normal;
+  background: linear-gradient(to right, #649173, #dbd5a4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 0;
+  text-align: center;
+  color: #c6f4f2;
+}
+
+#challenges {
+  max-width: 50rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.challenge button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #12352f;
+  color: #edfcfa;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.challenge button:hover {
+  background: #051715;
+}
+
+.challenge h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #221c18;
+}
+
+.challenge .active {
+  animation: flash 1s infinite;
+}
+
+
+@keyframes slide-in-from-top {
+  0% {
+    transform: translateY(-15%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}

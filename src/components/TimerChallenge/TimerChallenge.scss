@@ -1,0 +1,19 @@
+.challenge {
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: linear-gradient(#649173, #dbd5a4);
+    color: #221c18;
+    box-shadow: 0 2px 8px rgba(35, 34, 34, 0.6);
+    border-radius: 6px;
+
+    .challenge-time {
+        border-radius: 4px;
+        padding: 0.25rem 0.5rem;
+        margin: 0.5rem;
+    }
+}
