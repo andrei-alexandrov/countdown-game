@@ -8,7 +8,9 @@ Technologies used: React.js, Sass.
 Open this link [https://countdown-timer-game.netlify.app/](https://countdown-timer-game.netlify.app/) to play it.
 
 ## Game image
-![countdown-image](./src//assets//countdownGame.png)
+![countdown-image](./src/assets/countdownGame.png)
+![countdown-image-win](./src/assets/countdown-game-win.png)
+![countdown-image-loss](./src/assets/countdown-game-loss.png)
 
 ## Available Scripts
 
