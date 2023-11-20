@@ -1,10 +1,11 @@
 Countdown game - Stop the timer once you estimate that time is (almost) up. Lowest score is 1, max is 99.
 
-Technologies used:![React.js Icon](./src//assets/ReactIcon.png)![Sass Icon](./src//assets/sa)
+Technologies used:
+<img src="./src/assets/ReactIcon.png" alt="React.js Icon" style="width: 45px; height: 45px;" /> 
+<img src="./src/assets/sass-icon-2.png" alt="Sass Icon" style="width: 56px; height: 56px;" />
+Open this link [https://countdown-timer-game.netlify.app/](https://countdown-timer-game.netlify.app/) to play it.
 
-Open this link []() to play it.
-
-## image
+## Game image
 ![countdown-image](./src//assets//countdownGame.png)
 
 ## Available Scripts
