@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import "./Player.scss";
 
@@ -6,8 +6,17 @@ export default function Player() {
   const [input, setInput] = useState("");
   const playerName = useRef();
 
+  useEffect(() => {
+    const storedName = localStorage.getItem("playerName");
+    if (storedName) {
+      setInput(storedName);
+    }
+  }, []);
+
   function handleClick() {
-    setInput(playerName.current.value);
+    const newInput = playerName.current.value;
+    setInput(newInput);
+    localStorage.setItem("playerName", newInput);
     playerName.current.value = "";
   }
 
